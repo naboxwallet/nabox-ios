@@ -1,0 +1,94 @@
+PODS:
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - CBSecp256k1 (0.9.0)
+  - CoreBitcoin (0.6.8.1):
+    - ISO8601DateFormatter
+    - OpenSSL-Universal (= 1.0.1.16)
+  - FDFullscreenPopGesture (1.1)
+  - IQKeyboardManager (4.0.13)
+  - ISO8601DateFormatter (0.8)
+  - KMNavigationBarTransition (1.1.8)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.17)
+  - MJRefresh (3.1.15.7)
+  - OpenSSL-Universal (1.0.1.16)
+  - RLP-ObjC (1.0.5)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - secp256k1_ios (0.1.3)
+  - SVProgressHUD (2.2.5)
+  - TrezorCrypto (0.0.9)
+  - TYAlertController (1.2.0)
+
+DEPENDENCIES:
+  - AFNetworking/NSURLSession (~> 3.0)
+  - AFNetworking/Reachability (~> 3.0)
+  - AFNetworking/Security (~> 3.0)
+  - AFNetworking/Serialization (~> 3.0)
+  - CBSecp256k1
+  - CoreBitcoin (from `https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec`)
+  - FDFullscreenPopGesture
+  - IQKeyboardManager (~> 4.0.7)
+  - KMNavigationBarTransition
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.1.15.7)
+  - RLP-ObjC
+  - SDWebImage (~> 4.3.2)
+  - secp256k1_ios
+  - SVProgressHUD
+  - TrezorCrypto
+  - TYAlertController
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CBSecp256k1
+    - FDFullscreenPopGesture
+    - IQKeyboardManager
+    - ISO8601DateFormatter
+    - KMNavigationBarTransition
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - OpenSSL-Universal
+    - RLP-ObjC
+    - SDWebImage
+    - secp256k1_ios
+    - SVProgressHUD
+    - TrezorCrypto
+    - TYAlertController
+
+EXTERNAL SOURCES:
+  CoreBitcoin:
+    :podspec: https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CBSecp256k1: d8a1c651b1e5dd1c35867e968ab4e7fd2430e4de
+  CoreBitcoin: 4ac6f6a61e543f08399c2fe57496d4fdcbaf74f9
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  KMNavigationBarTransition: 7ee1a05ff758bce9258845a803f7a8b00585bd58
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  OpenSSL-Universal: 85ef63bf81d0741b03c8719cd29685c37c59518d
+  RLP-ObjC: a999411362b75a876d9727b2987c9b334b2fd5f7
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  secp256k1_ios: ac9ef04e761f43c58012b28548afa91493761f17
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TrezorCrypto: bfeea47a052dca2c77d4a39e1e183865e52de14d
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+
+PODFILE CHECKSUM: cc11826e4b3e35f029d27c7d296db58dded193d6
+
+COCOAPODS: 1.8.4

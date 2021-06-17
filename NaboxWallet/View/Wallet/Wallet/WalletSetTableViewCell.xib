@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WalletSetTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyF-V8-cE6">
+                        <rect key="frame" x="15" y="5" width="345" height="114.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Rx-4qV">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="57.5"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pz-G0-AAD">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="钱包名称">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5W7-b6-s4z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nuls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-HK-ZI6">
+                                <rect key="frame" x="300" y="18.5" width="30" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-g1-Dl2">
+                                <rect key="frame" x="0.0" y="57.5" width="345" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8k-PG-y3q">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="钱包皮肤">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skinBUttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qYh-Kb-Or6"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="Lmr-YH-sLE">
+                                        <rect key="frame" x="311" y="16.5" width="24" height="24"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="w8k-PG-y3q" firstAttribute="top" secondItem="U3Y-g1-Dl2" secondAttribute="top" id="9al-J7-JOP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lmr-YH-sLE" secondAttribute="trailing" constant="10" id="9hp-Fb-usE"/>
+                                    <constraint firstAttribute="trailing" secondItem="w8k-PG-y3q" secondAttribute="trailing" id="Cy8-ZA-exo"/>
+                                    <constraint firstAttribute="bottom" secondItem="w8k-PG-y3q" secondAttribute="bottom" id="QtD-pp-ias"/>
+                                    <constraint firstItem="w8k-PG-y3q" firstAttribute="leading" secondItem="U3Y-g1-Dl2" secondAttribute="leading" id="b6J-6p-gzC"/>
+                                    <constraint firstItem="Lmr-YH-sLE" firstAttribute="centerY" secondItem="w8k-PG-y3q" secondAttribute="centerY" id="fBq-wv-pzT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U3Y-g1-Dl2" secondAttribute="trailing" id="7FZ-wm-fkT"/>
+                            <constraint firstItem="U3Y-g1-Dl2" firstAttribute="leading" secondItem="NyF-V8-cE6" secondAttribute="leading" id="9zZ-EB-N2O"/>
+                            <constraint firstItem="U3Y-g1-Dl2" firstAttribute="top" secondItem="hJ8-Rx-4qV" secondAttribute="bottom" id="FoQ-5l-u0D"/>
+                            <constraint firstItem="1pz-G0-AAD" firstAttribute="top" secondItem="NyF-V8-cE6" secondAttribute="top" id="ThU-4w-B3i"/>
+                            <constraint firstAttribute="trailing" secondItem="hJ8-Rx-4qV" secondAttribute="trailing" id="WiI-xE-CA7"/>
+                            <constraint firstAttribute="trailing" secondItem="Efu-HK-ZI6" secondAttribute="trailing" constant="15" id="Wp0-1O-68n"/>
+                            <constraint firstItem="U3Y-g1-Dl2" firstAttribute="top" secondItem="1pz-G0-AAD" secondAttribute="bottom" id="ZLG-sM-mfc"/>
+                            <constraint firstItem="hJ8-Rx-4qV" firstAttribute="leading" secondItem="NyF-V8-cE6" secondAttribute="leading" id="aoo-Xy-kem"/>
+                            <constraint firstItem="hJ8-Rx-4qV" firstAttribute="top" secondItem="NyF-V8-cE6" secondAttribute="top" id="bkS-VQ-pec"/>
+                            <constraint firstItem="1pz-G0-AAD" firstAttribute="leading" secondItem="NyF-V8-cE6" secondAttribute="leading" id="bpy-0K-S7k"/>
+                            <constraint firstAttribute="bottom" secondItem="U3Y-g1-Dl2" secondAttribute="bottom" id="leJ-dH-r0n"/>
+                            <constraint firstItem="U3Y-g1-Dl2" firstAttribute="height" secondItem="hJ8-Rx-4qV" secondAttribute="height" id="mU3-7U-Bbv"/>
+                            <constraint firstItem="Efu-HK-ZI6" firstAttribute="centerY" secondItem="1pz-G0-AAD" secondAttribute="centerY" id="pFV-iz-ZDz"/>
+                            <constraint firstAttribute="trailing" secondItem="1pz-G0-AAD" secondAttribute="trailing" id="qrc-pi-PvY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NyF-V8-cE6" secondAttribute="trailing" constant="15" id="C7B-tU-ICi"/>
+                    <constraint firstItem="NyF-V8-cE6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="K3K-OB-VRk"/>
+                    <constraint firstItem="NyF-V8-cE6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="b05-Rm-42U"/>
+                    <constraint firstAttribute="bottom" secondItem="NyF-V8-cE6" secondAttribute="bottom" constant="5" id="pJ1-N1-aeL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="NyF-V8-cE6" id="vqd-nm-kX0"/>
+                <outlet property="nameButton" destination="1pz-G0-AAD" id="lga-8M-AHd"/>
+                <outlet property="nameLabel" destination="Efu-HK-ZI6" id="vac-ph-Sqa"/>
+                <outlet property="skinButton" destination="w8k-PG-y3q" id="tH7-q1-RaT"/>
+            </connections>
+            <point key="canvasLocation" x="-207" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_chevron_right" width="24" height="24"/>
+    </resources>
+</document>

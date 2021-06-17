@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExportWalletViewController">
+            <connections>
+                <outlet property="infoLabel" destination="4WD-J2-h3w" id="ccg-i9-LFG"/>
+                <outlet property="nextButton" destination="aoO-Ce-hg8" id="dtp-Oa-bDw"/>
+                <outlet property="passwordTextField" destination="1Fs-m3-Dx0" id="LWw-TE-AlR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="钱包密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-m3-Dx0">
+                    <rect key="frame" x="34" y="284" width="346" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ROl-UM-pGN"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-Ce-hg8">
+                    <rect key="frame" x="34" y="798" width="346" height="44"/>
+                    <color key="backgroundColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QDW-Vy-F43"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="bdc-PO-js8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WD-J2-h3w">
+                    <rect key="frame" x="34" y="64" width="346" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Abx-UZ-RBK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4WD-J2-h3w" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="34" id="8yh-8N-xJ9"/>
+                <constraint firstItem="1Fs-m3-Dx0" firstAttribute="top" secondItem="4WD-J2-h3w" secondAttribute="bottom" constant="40" id="BsX-2C-LU1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4WD-J2-h3w" secondAttribute="trailing" constant="34" id="GBv-FH-FZd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1Fs-m3-Dx0" secondAttribute="trailing" constant="34" id="Lz7-kM-5ri"/>
+                <constraint firstItem="aoO-Ce-hg8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="34" id="TLP-xi-7qS"/>
+                <constraint firstItem="4WD-J2-h3w" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="VCO-mo-f9H"/>
+                <constraint firstItem="1Fs-m3-Dx0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="34" id="W6Y-dd-uDk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="aoO-Ce-hg8" secondAttribute="bottom" constant="20" id="q1Q-zT-7d1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aoO-Ce-hg8" secondAttribute="trailing" constant="34" id="rkI-Cc-Ldt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-267" y="-31"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddAddressPopView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-Wy-MZS">
+                    <rect key="frame" x="24" y="126" width="111" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="diy-KL-0tm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="VU1-58-0ir"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该地址未在通讯录，是否需要添加？" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hat-VB-YHm">
+                    <rect key="frame" x="24" y="20" width="242" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nsdofijdsofjisofjsdofjsdl53252Nsdofijdsofjisofjsdofjsdl53252" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flj-Ej-njH">
+                    <rect key="frame" x="24" y="68.5" width="242" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3N-pn-R0U">
+                    <rect key="frame" x="155" y="126" width="111" height="40"/>
+                    <color key="backgroundColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="7py-hH-fO5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hat-VB-YHm" secondAttribute="trailing" constant="24" id="1Y6-TS-sba"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="centerY" secondItem="GXM-Wy-MZS" secondAttribute="centerY" id="2ZF-62-Dh5"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="leading" secondItem="hat-VB-YHm" secondAttribute="leading" id="Eoo-j4-F4b"/>
+                <constraint firstItem="hat-VB-YHm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="Eud-hI-cfC"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="centerX" secondItem="hat-VB-YHm" secondAttribute="centerX" id="FYT-9E-J9t"/>
+                <constraint firstAttribute="trailing" secondItem="D3N-pn-R0U" secondAttribute="trailing" constant="24" id="GXr-sf-Ucj"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="width" secondItem="GXM-Wy-MZS" secondAttribute="width" id="JMo-Bh-1Yq"/>
+                <constraint firstItem="hat-VB-YHm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="JYg-Sd-4nY"/>
+                <constraint firstItem="GXM-Wy-MZS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="QRS-I2-qff"/>
+                <constraint firstAttribute="bottom" secondItem="GXM-Wy-MZS" secondAttribute="bottom" constant="24" id="S5b-sP-KT2"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="leading" secondItem="GXM-Wy-MZS" secondAttribute="trailing" constant="20" id="SWr-QR-gUH"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="trailing" secondItem="hat-VB-YHm" secondAttribute="trailing" id="bP7-qQ-cuO"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="height" secondItem="GXM-Wy-MZS" secondAttribute="height" id="pa3-gr-InA"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="top" secondItem="hat-VB-YHm" secondAttribute="bottom" constant="10" id="shp-Ii-SGG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addresslabel" destination="Flj-Ej-njH" id="81e-1Z-9oO"/>
+                <outlet property="cancelButton" destination="GXM-Wy-MZS" id="rh9-KQ-gdm"/>
+                <outlet property="confirmButton" destination="D3N-pn-R0U" id="5A4-Bm-CUD"/>
+                <outlet property="infoLabel" destination="hat-VB-YHm" id="yUH-lb-AhV"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="123"/>
+        </view>
+    </objects>
+</document>

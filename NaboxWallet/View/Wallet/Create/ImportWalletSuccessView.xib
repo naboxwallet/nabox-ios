@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImportWalletSuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导入成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UML-5T-2Hm">
+                    <rect key="frame" x="170" y="102" width="74" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_succ" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-Xf-KTe">
+                    <rect key="frame" x="182" y="37" width="50" height="50"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-Tc-Wwa">
+                    <rect key="frame" x="364" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="OJ9-1G-dWb"/>
+                        <constraint firstAttribute="height" constant="40" id="mA3-QN-Ogy"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="eey-sp-xWe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iXX-Tc-Wwa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9IT-RQ-6pT"/>
+                <constraint firstItem="UML-5T-2Hm" firstAttribute="top" secondItem="eD4-Xf-KTe" secondAttribute="bottom" constant="15" id="BZ9-gc-hUc"/>
+                <constraint firstItem="eD4-Xf-KTe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VGu-67-Mnn"/>
+                <constraint firstItem="UML-5T-2Hm" firstAttribute="centerX" secondItem="eD4-Xf-KTe" secondAttribute="centerX" id="kpd-eZ-Erw"/>
+                <constraint firstAttribute="trailing" secondItem="iXX-Tc-Wwa" secondAttribute="trailing" constant="10" id="oz5-of-DX6"/>
+                <constraint firstItem="eD4-Xf-KTe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="znJ-NW-xLU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="eD4-Xf-KTe" id="dNS-29-thJ"/>
+                <outlet property="infoLabel" destination="UML-5T-2Hm" id="kaD-v8-0Tr"/>
+            </connections>
+            <point key="canvasLocation" x="-110" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="24" height="24"/>
+        <image name="icon_succ" width="50" height="50"/>
+    </resources>
+</document>

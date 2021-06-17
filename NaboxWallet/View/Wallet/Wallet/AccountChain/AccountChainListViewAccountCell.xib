@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="AccountChainListViewAccountCell">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JB-GU-RYu">
+                        <rect key="frame" x="5" y="30" width="117" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.5607843137254902" green="0.58431372549019611" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-th-IgT">
+                        <rect key="frame" x="5" y="55" width="117" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.5607843137254902" green="0.58431372549019611" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5JB-GU-RYu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0mX-lq-Rwd"/>
+                    <constraint firstItem="5JB-GU-RYu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="1DG-nj-b9v"/>
+                    <constraint firstItem="eT5-th-IgT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="5rt-zA-DaL"/>
+                    <constraint firstItem="eT5-th-IgT" firstAttribute="top" secondItem="5JB-GU-RYu" secondAttribute="bottom" constant="8" id="MEb-5U-J7b"/>
+                    <constraint firstAttribute="trailing" secondItem="eT5-th-IgT" secondAttribute="trailing" constant="5" id="VCz-gQ-fIs"/>
+                    <constraint firstAttribute="trailing" secondItem="5JB-GU-RYu" secondAttribute="trailing" constant="5" id="YAO-yU-tZl"/>
+                    <constraint firstItem="5JB-GU-RYu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="ez7-dd-fdz"/>
+                    <constraint firstItem="eT5-th-IgT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vrV-6h-YPQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="accountBalanceLable" destination="eT5-th-IgT" id="KsG-hZ-etK"/>
+                <outlet property="accountNameLabel" destination="5JB-GU-RYu" id="z89-FE-nrz"/>
+            </connections>
+            <point key="canvasLocation" x="-180.43478260869566" y="46.205357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

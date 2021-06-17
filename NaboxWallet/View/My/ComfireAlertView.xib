@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComfireAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-Wy-MZS">
+                    <rect key="frame" x="24" y="88" width="111" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="diy-KL-0tm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancleButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Mj-na-yr2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flj-Ej-njH">
+                    <rect key="frame" x="10" y="32" width="270" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3N-pn-R0U">
+                    <rect key="frame" x="155" y="88" width="111" height="40"/>
+                    <color key="backgroundColor" red="0.32549019610000002" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="yQ7-PV-U3J"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="centerY" secondItem="GXM-Wy-MZS" secondAttribute="centerY" id="2ZF-62-Dh5"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FFT-lz-sZe"/>
+                <constraint firstAttribute="trailing" secondItem="D3N-pn-R0U" secondAttribute="trailing" constant="24" id="GXr-sf-Ucj"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="width" secondItem="GXM-Wy-MZS" secondAttribute="width" id="JMo-Bh-1Yq"/>
+                <constraint firstItem="GXM-Wy-MZS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="QRS-I2-qff"/>
+                <constraint firstAttribute="bottom" secondItem="GXM-Wy-MZS" secondAttribute="bottom" constant="24" id="S5b-sP-KT2"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="leading" secondItem="GXM-Wy-MZS" secondAttribute="trailing" constant="20" id="SWr-QR-gUH"/>
+                <constraint firstAttribute="trailing" secondItem="Flj-Ej-njH" secondAttribute="trailing" constant="10" id="Vpr-GQ-PfD"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="pCC-P0-BgK"/>
+                <constraint firstItem="D3N-pn-R0U" firstAttribute="height" secondItem="GXM-Wy-MZS" secondAttribute="height" id="pa3-gr-InA"/>
+                <constraint firstItem="Flj-Ej-njH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vcT-ih-JO3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBuuton" destination="GXM-Wy-MZS" id="rY8-Co-dV3"/>
+                <outlet property="confirmButton" destination="D3N-pn-R0U" id="X9b-gq-uSj"/>
+                <outlet property="infoLabel" destination="Flj-Ej-njH" id="LS6-TE-5Rt"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="112"/>
+        </view>
+    </objects>
+</document>
