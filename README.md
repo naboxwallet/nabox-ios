@@ -1,48 +1,15 @@
-# NaboxWallet
+# Nabox Wallet iOS App
 
-### 网络请求
-* 方法定义
-```
-/** 请求类型 后续有需求可再拓展 */
-typedef enum : NSUInteger {
-RequestTypeGet,
-RequestTypePost,
-} RequestType;
+Download: [App Store](https://apps.apple.com/us/app/nabox-wallet/id6443821021)  
+Download: [TestFlight](https://testflight.apple.com/join/P3ASFT8F)
 
-@interface NetUtil : NSObject
 
-/**
-*  数据请求
-*
-*  @param type          请求类型
-*  @param path          请求方法地址
-*  @param dataModel     请求参数
-*  @param responseBlock 数据的回调
-*
-*/
-+ (void)requestWithType:(RequestType)type
-path:(NSString *)path
-dataModel:(BaseModel *)dataModel
-responseBlock:(ResponseDataBlock)responseBlock;
+## Join the Nabox Community
 
-@end
-
-```
-* 使用示例
-
-```
-/** 获取最新的版本信息 */
-- (void)getVersion
-{
-    VersionManageModel *versionModel = [[VersionManageModel alloc] init];
-    versionModel.resClassStr = NSStringFromClass([VersionManageModel class]);
-    versionModel.isAdd = YES;
-    versionModel.language = @"EN";
-    [NetUtil requestWithType:RequestTypeGet path:API_VERSION dataModel:versionModel responseBlock:^(id  _Nullable dataObj, BOOL success, NSString * _Nullable message) {
-        if (success) {
-            VersionManageModel *dataModel = dataObj;
-            DLog(@"%@",dataModel.version);
-        }
-    }];
-}
-```
+Website: https://nabox.io
+Twitter: https://twitter.com/naboxwallet
+Telegram: https://t.me/naboxcommunity
+Discord: https://discord.gg/mQVXZJXMkn
+GitHub: https://github.com/naboxwallet
+Medium: https://naboxwallet.medium.com
+Forum: https://forum.nabox.io
